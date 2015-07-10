@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace StaffChatPlugin
 {
-    [ApiVersion(1, 18)]
+    [ApiVersion(1, 19)]
     public class StaffChat : TerrariaPlugin
     {
         public static bool[] Spying = new bool[255];
