@@ -13,7 +13,7 @@ namespace StaffChatPlugin
     {
         public static string SavePath = Path.Combine(TShock.SavePath, "StaffChat.json");
         public static Clr DefaultChatColor = new Clr(200, 50, 150);
-        public Clr ChatColor;
+        public Clr ChatColor = DefaultChatColor;
         public string StaffChatPrefix = "[StaffChat]";
         public string StaffChatGuestTag = "<Guest>";
 
