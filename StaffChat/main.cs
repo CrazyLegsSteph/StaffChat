@@ -111,7 +111,7 @@ namespace StaffChatPlugin
 
                 if (ts.Group.HasPermission(Permission.Chat) || InStaffChat[args.Player.Index])
                 {
-                    string msg = string.Join("", args.Parameters);
+                    string msg = string.Join(" ", args.Parameters);
                     ts.SendMessage(string.Format("{0}{1} {2}: {3}", config.StaffChatPrefix, (InStaffChat[args.Player.Index] ? " " + config.StaffChatGuestTag : ""), args.Player.Name, msg), staffchatcolor);
                 }
             }
