@@ -234,7 +234,7 @@ namespace StaffChatPlugin
 
         public void ShowStaff(CommandArgs args)
         {
-            var staff = from staffmember in TShock.Players where staffmember != null && staffmember.Group.HasPermission(Permission.List) orderby staffmember.Group.Name select staffmember;
+            var staff = from staffmember in TShock.Players where staffmember != null && staffmember.Group.HasPermission(Permission.StaffMember) orderby staffmember.Group.Name select staffmember;
             args.Player.SendInfoMessage("~ Currently online staffmembers ~");
             foreach (TSPlayer ts in staff)
             {
